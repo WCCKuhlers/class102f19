@@ -62,7 +62,26 @@ function day1AM() {
     console.log(feet);
     
     console.log(fullName+" is " + feet + " foot " + inches + " inches");
+
+    //using function below python print instead of console.log
+    print("Hello World");
+    var convertedTemp f2c(32); //Calling the function with 212 becomes tempF
+    print(convertedTemp);
 }
 
 // to call the function YES SEMICOLON!!
 day1AM();
+
+//replace console.log with word print
+function print(input) {
+    console.log(input);
+}
+
+//Converts Fahrenheit to Celcius
+//Input: Temperature in fahrenheit
+function f2c(tempF) {
+    return((tempF - 32) * (5 / 9));//return sends it back to the call above most will return instead of print
+}
+
+
+
