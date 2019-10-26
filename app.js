@@ -73,6 +73,10 @@ function day1AM() {
     var age = 19;
     print(canIGoToTheCasino(age, "IA"));
     print(canIGoToTheCasino(age, "MN"));
+
+    print(whatShouldIWear(90)); //90 being sent to temp is it greater than 75?
+    print(whatShouldIWear(60));
+    print(whatShouldIWear(-8));
  }
 
 // to call the function YES SEMICOLON!! 
@@ -96,5 +100,26 @@ function bmiConverter(weight, height) { //inputs are weight & height called PARA
 
 function canIGoToTheCasino(age, location) {
     return age >= 21 && location == "IA" || age >= 18 && location == "MN" ; //|| is "pipe" for the OR
+}
+
+function canISleepIn(day, personalDay, holiday) { // personalDay boolean, day Sat or Sun, holidays
+    // Assume a normal M-F 8-5 job
+    // return true if the day is Saturday or Sunday
+    // or vacation or holiday
+}
+
+function whatShouldIWear(temp) {
+    if(temp >= 75) {
+        return "swim wear";
+    }
+    else if (temp >= 45) { //no else() unless else if ()
+        return "light jacket";
+    }
+    else if(temp >= 10) {
+        return "winter jacket";
+    }
+    else {
+        return 'Don\'t go outside';
+    }
 }
 
