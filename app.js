@@ -36,11 +36,32 @@ function day1AM() {
     var heightInches = 65;
     var address = "306 Grace Ave.";
     var middleName;
-    console.log(middleName);
-    console.log(typeof(fullName)); 
+    //console.log(middleName);
+    //console.log(typeof(fullName)); 
     var likesPizza = true; //boolean NO Quotes if "" will become a string.  In python capitalize T or F
     var hasTattoos = false;
-    console.log(typeof(likesPizza)); //
+    //console.log(typeof(likesPizza)); //
+
+    console.log(age);
+    age = 50; //changing variable value
+    console.log(age);
+    age = age + 1;
+    console.log(age);
+    age++;
+    age += 1;
+    console.log(age);
+    age *= 5;
+    age /= 10;
+    console.log(age);
+
+    console.log(fullName + " is " + age + " years old.");
+    console.log("Do you like pizza? " + likesPizza);
+    //console.log("Kyle Kuhlers is 5 foot 5 inches tall");  CHALLENGE use variables above
+    var feet = Math.floor(heightInches / 12); //to round down use floor function "math library" Math.Ceil rounds up
+    var inches = heightInches % 12; //modulus (%)will give you remainder
+    console.log(feet);
+    
+    console.log(fullName+" is " + feet + " foot " + inches + " inches");
 }
 
 // to call the function YES SEMICOLON!!
