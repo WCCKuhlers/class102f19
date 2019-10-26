@@ -24,3 +24,24 @@ function draw() {
     //line(100, 225, 400, 225); //draws line starting at x,y (100,225) ending at x,y (400, 225)
   
 }
+// or create function this way too:  var day1AM = function() {
+
+//}
+// define function below NO SEMICOLON!!
+function day1AM() {
+    console.log("Hello Word");
+    var fullName = "Kyle Kuhlers";
+    var age = 49;
+    var weight = 138.7; // numbers in other programs would be called integer (python, etc)
+    var heightInches = 65;
+    var address = "306 Grace Ave.";
+    var middleName;
+    console.log(middleName);
+    console.log(typeof(fullName)); 
+    var likesPizza = true; //boolean NO Quotes if "" will become a string.  In python capitalize T or F
+    var hasTattoos = false;
+    console.log(typeof(likesPizza)); //
+}
+
+// to call the function YES SEMICOLON!!
+day1AM();
