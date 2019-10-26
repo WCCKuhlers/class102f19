@@ -43,7 +43,7 @@ function day1AM() {
     //console.log(typeof(likesPizza)); //
 
     console.log(age);
-    age = 50; //changing variable value
+    age = 50; //changing variable value global variable
     console.log(age);
     age = age + 1;
     console.log(age);
@@ -62,15 +62,22 @@ function day1AM() {
     console.log(feet);
     
     console.log(fullName+" is " + feet + " foot " + inches + " inches");
-
+    
+}
+ function day1PM() {
     //using function below python print instead of console.log
     print("Hello World");
-    var convertedTemp f2c(32); //Calling the function with 212 becomes tempF
+    var convertedTemp = f2c(32); //Calling the function with 212 becomes tempF
     print(convertedTemp);
-}
+    print(canIGoToTheCasino(age, "IA"));//age is undefined in a different function age is local
+    var age = 19;
+    print(canIGoToTheCasino(age, "IA"));
+    print(canIGoToTheCasino(age, "MN"));
+ }
 
-// to call the function YES SEMICOLON!!
+// to call the function YES SEMICOLON!! 
 day1AM();
+day1PM();
 
 //replace console.log with word print
 function print(input) {
@@ -83,5 +90,11 @@ function f2c(tempF) {
     return((tempF - 32) * (5 / 9));//return sends it back to the call above most will return instead of print
 }
 
+function bmiConverter(weight, height) { //inputs are weight & height called PARAMETERS
+    return 0;
+}
 
+function canIGoToTheCasino(age, location) {
+    return age >= 21 && location == "IA" || age >= 18 && location == "MN" ; //|| is "pipe" for the OR
+}
 
