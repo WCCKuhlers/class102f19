@@ -73,4 +73,43 @@ function day2AM() {
 
 }
 
-day2AM()
+// day2AM()
+// object oriented
+
+function day2PM() {
+    var kyle = { // kyle is called an instance of the object
+        firstName: "Kyle", // no semicolon IE array for yourself 
+        middleName:  "Lynn", // middle name is Key; Lynn is value
+        lastName:  "Kuhlers", // last key property doesn't need last ,
+        dob: [4,3,1970], //month, day, year array
+        likesPizza: false, // boolean
+        heightInInches: 65, // number
+        fullName: function () {
+            return this.firstName + ' ' + this.middleName + ' ' +
+            this.lastName; // this keyword refers to property 
+            //associated with the current object
+        },
+        age: function() {
+            var today = new Date();
+            var year = today.getFullYear();
+            // getMonth will result in 0 for January, 1 for February, etc.
+            var month = today.getMonth() +1;
+            var day = today.getDate();
+            // The birth year is at index position 2 of the dob array
+            var myAge = year - this.dob[2];
+            if(month < this.dob[0] || month === this.dob[0] && day < this.dob[1]) {
+                // Subtract one from the age if you haven't had your birthday this year.
+                myAge--;
+            }
+            return(myAge);
+        }, // this comma is optional but add later will need it
+    };
+    
+    print(kyle.firstName);
+    print(kyle.likesPizza);
+    print(kyle.heightInInches);
+    print(kyle.fullName());
+    print(kyle.age());
+}
+
+day2PM();
