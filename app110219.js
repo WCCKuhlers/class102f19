@@ -60,6 +60,17 @@ function day2AM() {
         print(state);
     });
 
+//    states.forEach(function (state){
+//        if(state === "Iowa"){
+//            print(state  + " is cool");
+//        } else {
+//            print(state + " sucks!")!
+//        }
+//        }
+//   });
+
+
+
 }
 
 day2AM()
